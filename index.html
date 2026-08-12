@@ -1,0 +1,1151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Máquina de Gelo para o seu negócio | Frete e instalação grátis | Bebedouros &amp; Cia</title>
+<meta name="description" content="Máquinas de gelo em cubo de 50 a 300 kg por dia para bares, restaurantes, hotéis, padarias e distribuidoras. Frete e instalação grátis em até 3 dias. Descubra em 1 minuto qual o tamanho certo para o seu negócio.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://gelo.bebedourosecia.com.br/">
+<link rel="icon" href="assets/logo.png">
+<meta property="og:title" content="Máquina de Gelo para o seu negócio | Bebedouros &amp; Cia">
+<meta property="og:description" content="Descubra em 1 minuto qual máquina de gelo o seu negócio precisa. Frete e instalação grátis em até 3 dias.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!--
+  ============================================================================
+  LP MÁQUINAS DE GELO · Bebedouros e Cia
+  Captação para WhatsApp, destino do tráfego de Google Ads.
+  Estratégia: projeto-lp-gelo.md · Publicação: spec-tecnica.md
+
+  ANTES DE PUBLICAR: resolver os marcadores [CONFIRMAR] (garantia, parcelamento,
+  raio de entrega) e preencher o bloco CFG no script, no fim do arquivo.
+  ============================================================================
+-->
+
+<style>
+  :root{
+    --azul:#0A4C8F; --azul-esc:#062B50; --azul-cl:#1580D8;
+    --gelo:#2BC4F0; --gelo-esc:#0B93BD; --gelo-luz:#EAF8FE;
+    --tinta:#0D1A24; --cinza:#5F7284; --cinza-cl:#94A6B4;
+    --linha:#E6EEF4; --nevoa:#F6FAFD; --branco:#fff;
+    --zap:#25D366; --zap-esc:#128C4A;
+    --r:18px; --r-g:28px;
+    --sombra-s:0 2px 10px rgba(10,60,110,.05);
+    --sombra-m:0 12px 34px rgba(10,60,110,.09);
+    --sombra-g:0 26px 64px rgba(6,43,80,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--branco);color:var(--tinta);
+    -webkit-font-smoothing:antialiased;line-height:1.6;font-size:16px;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+  .txt-c{text-align:center}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+  /* ---------- revelação suave ----------
+     Escopada em .js: se o script falhar, o conteúdo aparece igual.
+     Conteúdo escondido que nunca revela é conteúdo que o visitante não lê. */
+  .js .rev{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+  .js .rev.vis{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .js .rev{opacity:1;transform:none;transition:none}
+    *{animation:none!important}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- ícones ---------- */
+  .ic{width:20px;height:20px;flex:0 0 20px;fill:currentColor}
+
+  /* ---------- topo ---------- */
+  .topo{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.82);backdrop-filter:blur(14px) saturate(1.4);
+    transition:box-shadow .3s,background .3s}
+  .topo.desceu{box-shadow:0 1px 0 rgba(10,60,110,.07),0 8px 30px rgba(10,60,110,.06);background:rgba(255,255,255,.94)}
+  .topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:72px}
+  .marca{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .marca img{width:42px;height:42px;border-radius:50%}
+  .marca span{display:flex;flex-direction:column;line-height:1.15}
+  .marca b{font-size:1.02rem;font-weight:800;color:var(--azul);letter-spacing:-.02em}
+  .marca small{font-size:.66rem;font-weight:600;color:var(--cinza-cl);letter-spacing:.05em}
+  .topo-acao{display:flex;align-items:center;gap:12px}
+  .tel-topo{display:none;font-size:.88rem;font-weight:700;color:var(--azul);text-decoration:none;white-space:nowrap}
+  .tel-topo:hover{color:var(--gelo-esc)}
+  @media(min-width:760px){.tel-topo{display:block}}
+
+  /* ---------- botões ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;
+    font-size:.97rem;font-weight:700;cursor:pointer;border:0;border-radius:100px;
+    padding:16px 28px;text-decoration:none;line-height:1.2;text-align:center;position:relative;
+    transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .22s,background .22s}
+  .btn:active{transform:translateY(1px) scale(.99)}
+  .btn-zap{background:linear-gradient(135deg,#2EE070,#1FB855);color:#04231C;box-shadow:0 10px 26px rgba(31,184,85,.32)}
+  .btn-zap:hover{box-shadow:0 16px 36px rgba(31,184,85,.4);transform:translateY(-2px)}
+  .btn-azul{background:linear-gradient(135deg,var(--azul-cl),var(--azul));color:#fff;box-shadow:0 10px 26px rgba(10,76,143,.3)}
+  .btn-azul:hover{box-shadow:0 16px 38px rgba(10,76,143,.38);transform:translateY(-2px)}
+  .btn-azul:disabled{background:#E8EFF5;color:#A7B7C4;box-shadow:none;cursor:not-allowed;transform:none}
+  .btn-luz{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28)}
+  .btn-luz:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+  .btn-branco{background:#fff;color:var(--azul);box-shadow:0 10px 26px rgba(0,0,0,.22)}
+  .btn-branco:hover{box-shadow:0 16px 38px rgba(0,0,0,.3);transform:translateY(-2px)}
+  .btn-sm{padding:11px 20px;font-size:.85rem}
+  .btn-larg{width:100%}
+
+  /* pulso discreto só no CTA principal */
+  .btn-zap.pulsa::after{content:"";position:absolute;inset:0;border-radius:100px;
+    box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:pulso 2.6s infinite}
+  @keyframes pulso{70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  /* ---------- herói ---------- */
+  .heroi{position:relative;color:#fff;padding:64px 0 130px;overflow:hidden;
+    background:linear-gradient(155deg,#052744 0%,#0A4C8F 55%,#0E63A8 100%)}
+  .blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+  .blob-1{width:520px;height:520px;top:-180px;left:-140px;background:rgba(43,196,240,.30)}
+  .blob-2{width:600px;height:600px;top:-120px;right:-220px;background:rgba(21,128,216,.42)}
+  .blob-3{width:380px;height:380px;bottom:-160px;left:38%;background:rgba(43,196,240,.16)}
+  .heroi .wrap{position:relative;z-index:2}
+  .heroi-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+  @media(min-width:900px){.heroi-grid{grid-template-columns:1.08fr .92fr;gap:40px}}
+  .selo{display:inline-flex;align-items:center;gap:9px;font-size:.76rem;font-weight:700;
+    color:#BDEEFF;background:rgba(43,196,240,.14);border:1px solid rgba(43,196,240,.3);
+    border-radius:100px;padding:8px 16px 8px 10px;margin-bottom:22px;backdrop-filter:blur(6px)}
+  .selo .pt{width:7px;height:7px;border-radius:50%;background:#4BE38C;box-shadow:0 0 0 4px rgba(75,227,140,.22);
+    animation:respira 2.4s ease-in-out infinite}
+  @keyframes respira{50%{box-shadow:0 0 0 8px rgba(75,227,140,0)}}
+  .heroi h1{font-size:2.15rem;font-weight:800;letter-spacing:-.03em;line-height:1.12;margin-bottom:16px}
+  .heroi h1 em{display:block;font-style:normal;background:linear-gradient(100deg,#7FE6FF,#B6F3FF);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .heroi .lead{font-size:1.06rem;color:#C6DCEC;max-width:520px;margin-bottom:30px;font-weight:400}
+  .heroi .lead b{color:#fff;font-weight:700}
+  .heroi-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+  .heroi-pe{display:flex;align-items:center;gap:9px;font-size:.85rem;color:#93B2C9}
+  .heroi-pe svg{width:15px;height:15px;fill:#93B2C9;flex:0 0 15px}
+  @media(min-width:900px){.heroi{padding:78px 0 122px}.heroi h1{font-size:2.92rem}}
+
+  /* palco do produto no herói */
+  .palco{position:relative;display:flex;align-items:center;justify-content:center;min-height:400px}
+  .palco .halo{position:absolute;width:min(96%,420px);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle,rgba(120,220,255,.20),rgba(255,255,255,0) 64%)}
+  .palco .chao{position:absolute;bottom:12%;width:min(72%,300px);height:26px;border-radius:50%;
+    background:radial-gradient(ellipse,rgba(0,0,0,.42),rgba(0,0,0,0) 70%);filter:blur(6px);
+    animation:sombra 6.5s ease-in-out infinite}
+  .palco img{position:relative;height:min(52vw,400px);width:auto;max-width:88%;object-fit:contain;
+    filter:drop-shadow(0 26px 40px rgba(0,0,0,.45));animation:flutua 6.5s ease-in-out infinite}
+  @keyframes flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+  @keyframes sombra{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(.9);opacity:.5}}
+  .balao{position:absolute;z-index:3;background:rgba(255,255,255,.97);color:var(--tinta);border-radius:16px;
+    padding:12px 16px;box-shadow:var(--sombra-g);white-space:nowrap}
+  .balao b{display:block;font-size:1.06rem;font-weight:800;line-height:1.15;color:var(--azul)}
+  .balao small{font-size:.71rem;font-weight:700;color:var(--cinza-cl)}
+  .balao-1{top:8%;left:-4%;animation:flutua 7.4s ease-in-out infinite;animation-delay:-1.2s}
+  .balao-2{bottom:16%;right:-4%;animation:flutua 7.4s ease-in-out infinite;animation-delay:-3.7s}
+  @media(max-width:899px){
+    .palco{min-height:330px;margin-top:6px}
+    .palco img{height:min(64vw,300px)}
+    .balao-1{left:2%}.balao-2{right:2%}
+    .balao b{font-size:.95rem}
+  }
+
+  /* onda separadora */
+  .onda{position:absolute;left:0;right:0;bottom:-1px;z-index:1;line-height:0}
+  .onda svg{width:100%;height:70px;display:block}
+  @media(min-width:760px){.onda svg{height:100px}}
+
+  /* ---------- faixa de confiança ---------- */
+  .confianca{padding:34px 0 4px}
+  .confianca ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:20px 16px}
+  @media(min-width:860px){.confianca ul{grid-template-columns:repeat(4,1fr);gap:24px}}
+  .confianca li{display:flex;gap:13px;align-items:flex-start}
+  .confianca .bolha{flex:0 0 40px;height:40px;border-radius:14px;display:grid;place-items:center;
+    background:linear-gradient(140deg,var(--gelo-luz),#DCF3FC);color:var(--gelo-esc)}
+  .confianca .bolha svg{width:19px;height:19px;fill:currentColor}
+  .confianca b{display:block;font-size:.92rem;font-weight:700;line-height:1.35}
+  .confianca span{font-size:.81rem;color:var(--cinza);line-height:1.5;display:block}
+
+  /* ---------- seções ---------- */
+  section{padding:66px 0}
+  @media(min-width:860px){section{padding:92px 0}}
+  .nevoa{background:
+      radial-gradient(600px 320px at 88% 8%,rgba(43,196,240,.09),transparent 62%),
+      radial-gradient(560px 300px at 4% 90%,rgba(10,76,143,.07),transparent 60%),
+      var(--nevoa)}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:800;
+    letter-spacing:.05em;color:var(--gelo-esc);background:var(--gelo-luz);
+    border-radius:100px;padding:7px 15px;margin-bottom:16px}
+  h2{font-size:1.85rem;font-weight:800;letter-spacing:-.028em;line-height:1.18;margin-bottom:14px}
+  h2 em{font-style:normal;background:linear-gradient(100deg,var(--azul-cl),var(--gelo));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-size:1.02rem;color:var(--cinza);max-width:600px;font-weight:400}
+  @media(min-width:860px){h2{font-size:2.4rem}}
+
+  /* ---------- seletor ---------- */
+  .zona-seletor{margin-top:-118px;position:relative;z-index:5;padding-bottom:0}
+  .cartao{background:var(--branco);border-radius:var(--r-g);box-shadow:var(--sombra-g);
+    overflow:hidden;max-width:660px;margin:0 auto}
+  .sel-topo{padding:22px 26px 16px;background:linear-gradient(180deg,#FBFDFF,#fff)}
+  .sel-passos{display:flex;justify-content:space-between;align-items:baseline;font-size:.76rem;
+    font-weight:700;color:var(--cinza-cl);margin-bottom:11px}
+  .sel-passos b{color:var(--azul)}
+  .trilho{height:6px;background:#EDF3F8;border-radius:100px;overflow:hidden}
+  .trilho i{display:block;height:100%;width:33.33%;border-radius:100px;
+    background:linear-gradient(90deg,var(--azul),var(--gelo));
+    transition:width .5s cubic-bezier(.2,.8,.2,1)}
+  .sel-corpo{padding:26px 26px 30px}
+  .etapa{display:none}
+  .etapa.on{display:block;animation:sobe .42s cubic-bezier(.2,.8,.3,1)}
+  @keyframes sobe{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .pergunta{font-size:1.3rem;font-weight:800;line-height:1.28;margin-bottom:7px;letter-spacing:-.02em}
+  .ajuda{font-size:.9rem;color:var(--cinza);margin-bottom:20px}
+
+  .opcoes{display:grid;gap:10px}
+  @media(min-width:540px){.opcoes.duas{grid-template-columns:1fr 1fr}}
+  .op{display:flex;align-items:center;gap:13px;text-align:left;cursor:pointer;font-family:inherit;
+    font-size:.94rem;font-weight:600;color:var(--tinta);background:var(--nevoa);
+    border:1.5px solid transparent;border-radius:var(--r);padding:15px 16px;width:100%;line-height:1.3;
+    transition:transform .2s cubic-bezier(.2,.7,.3,1),box-shadow .2s,border-color .2s,background .2s}
+  .op:hover{background:#fff;border-color:#CBEBF8;box-shadow:var(--sombra-m);transform:translateY(-2px)}
+  .op.sel{background:var(--gelo-luz);border-color:var(--gelo);box-shadow:0 0 0 4px rgba(43,196,240,.15)}
+  .op .mk{flex:0 0 20px;height:20px;border:2px solid #D3E0E9;border-radius:50%;display:grid;place-items:center;
+    transition:.2s;background:#fff}
+  .op.sel .mk{border-color:var(--gelo);background:var(--gelo)}
+  .op.sel .mk:after{content:"";width:7px;height:7px;border-radius:50%;background:#fff}
+
+  .campo{margin-bottom:15px}
+  .campo label{display:block;font-size:.82rem;font-weight:700;color:var(--cinza);margin-bottom:7px}
+  .campo input{width:100%;font-family:inherit;font-size:1rem;font-weight:600;color:var(--tinta);
+    background:var(--nevoa);border:1.5px solid transparent;border-radius:var(--r);padding:15px 16px;transition:.2s}
+  .campo input:focus{outline:0;background:#fff;border-color:var(--gelo);box-shadow:0 0 0 4px rgba(43,196,240,.15)}
+  .campo input::placeholder{color:#A9BAC6;font-weight:400}
+  .campo .dica{display:block;font-size:.77rem;color:var(--cinza-cl);margin-top:6px;line-height:1.45}
+  .erro{font-size:.8rem;color:#C0392B;font-weight:700;margin:-4px 0 12px;display:none}
+  .erro.on{display:block;animation:treme .34s}
+  @keyframes treme{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+  .voltar{background:none;border:0;font-family:inherit;font-size:.86rem;font-weight:700;color:var(--cinza-cl);
+    cursor:pointer;padding:12px 0 0;display:block;margin:0 auto;transition:color .2s}
+  .voltar:hover{color:var(--azul)}
+  .lgpd{font-size:.77rem;color:var(--cinza-cl);line-height:1.5;margin-top:14px;text-align:center}
+
+  /* ---------- resultado ---------- */
+  .resultado{display:none}
+  .resultado.on{display:block;animation:sobe .5s cubic-bezier(.2,.8,.3,1)}
+  .res-topo{position:relative;overflow:hidden;background:linear-gradient(140deg,#052744,#0A4C8F 60%,#1580D8);
+    color:#fff;padding:26px 26px 24px;display:flex;align-items:center;gap:20px}
+  .res-topo .blob{width:300px;height:300px;top:-140px;right:-90px;background:rgba(43,196,240,.34)}
+  .res-txt{position:relative;z-index:2;flex:1;min-width:0}
+  .res-txt small{display:block;font-size:.76rem;font-weight:700;color:#8FDDF7;margin-bottom:4px}
+  .res-txt b{font-size:1.7rem;font-weight:800;letter-spacing:-.03em;display:block;line-height:1.1;margin-bottom:5px}
+  .res-txt span{font-size:.88rem;color:#BAD4E6;display:block;line-height:1.45}
+  .res-foto{position:relative;z-index:2;flex:0 0 auto;height:118px;width:auto;max-width:120px;
+    object-fit:contain;filter:drop-shadow(0 14px 24px rgba(0,0,0,.42))}
+  @media(max-width:520px){.res-topo{flex-direction:row;align-items:center;gap:14px}.res-foto{height:96px}}
+
+  .res-corpo{padding:24px 26px 28px}
+  .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
+  @media(min-width:520px){.specs{grid-template-columns:repeat(4,1fr)}}
+  .specs div{background:var(--nevoa);border-radius:var(--r);padding:14px 15px;text-align:center}
+  .specs small{display:block;font-size:.71rem;font-weight:700;color:var(--cinza-cl);margin-bottom:3px}
+  .specs b{font-size:1.02rem;font-weight:800;letter-spacing:-.02em}
+  .nota-modelo{background:#FFF9EC;border-radius:var(--r);padding:14px 16px;
+    font-size:.85rem;color:#7A5E14;line-height:1.55;margin-bottom:18px}
+  .economia{background:linear-gradient(140deg,var(--gelo-luz),#DFF4FD);border-radius:var(--r);
+    padding:17px 18px;margin-bottom:18px}
+  .economia b{display:block;font-size:.97rem;font-weight:800;color:#075A75;margin-bottom:6px}
+  .economia p{font-size:.89rem;color:#0A6D8C;line-height:1.6}
+  .economia p strong{font-weight:800;color:#064E66}
+  .economia small{display:block;font-size:.75rem;color:#4C8AA3;margin-top:10px;line-height:1.5}
+  .res-nota{font-size:.8rem;color:var(--cinza-cl);line-height:1.55;margin-top:14px;text-align:center}
+
+  /* ---------- modelos ---------- */
+  .modelos{display:grid;gap:20px;grid-template-columns:1fr;margin-top:38px}
+  @media(min-width:620px){.modelos{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.modelos{grid-template-columns:repeat(3,1fr)}}
+  .modelo{background:var(--branco);border-radius:var(--r-g);padding:22px;display:flex;flex-direction:column;
+    box-shadow:var(--sombra-s);transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s}
+  .modelo:hover{transform:translateY(-6px);box-shadow:var(--sombra-g)}
+  .modelo .foto{position:relative;height:170px;display:grid;place-items:center;margin-bottom:16px}
+  .modelo .foto:before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;
+    background:radial-gradient(circle,var(--gelo-luz),rgba(234,248,254,0) 68%)}
+  .modelo .foto img{position:relative;max-height:170px;width:auto;transition:transform .4s cubic-bezier(.2,.7,.3,1)}
+  .modelo:hover .foto img{transform:scale(1.06) translateY(-4px)}
+  .modelo .uso{font-size:.74rem;font-weight:700;color:var(--gelo-esc);margin-bottom:5px}
+  .modelo h3{font-size:1.22rem;font-weight:800;letter-spacing:-.025em;margin-bottom:14px}
+  .modelo dl{display:flex;gap:22px;margin-bottom:16px}
+  .modelo dt{font-size:.71rem;font-weight:700;color:var(--cinza-cl)}
+  .modelo dd{font-size:1rem;font-weight:800;letter-spacing:-.02em}
+  .modelo .preco{margin-top:auto;padding-top:15px;border-top:1px dashed var(--linha);
+    display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+  .modelo .preco small{display:block;font-size:.73rem;color:var(--cinza-cl);font-weight:600}
+  .modelo .preco b{font-size:1.42rem;font-weight:800;color:var(--azul);letter-spacing:-.03em;line-height:1.1}
+  .zap-mini{flex:0 0 42px;height:42px;border-radius:50%;background:var(--gelo-luz);color:var(--zap-esc);
+    display:grid;place-items:center;cursor:pointer;border:0;transition:.24s}
+  .zap-mini:hover{background:var(--zap);color:#04231C;transform:scale(1.1) rotate(-6deg)}
+  .zap-mini svg{width:20px;height:20px;fill:currentColor}
+  .nota-tabela{font-size:.84rem;color:var(--cinza-cl);line-height:1.65;margin-top:26px;max-width:760px}
+
+  /* ---------- objeção ---------- */
+  .duas-col{display:grid;gap:34px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:940px){.duas-col{grid-template-columns:1.02fr .98fr;gap:60px}}
+  .lista{list-style:none;display:flex;flex-direction:column;gap:20px;margin-top:28px}
+  .lista li{display:flex;gap:15px;align-items:flex-start}
+  .lista .n{flex:0 0 34px;height:34px;border-radius:12px;
+    background:linear-gradient(140deg,var(--azul-cl),var(--azul));color:#fff;
+    display:grid;place-items:center;font-size:.86rem;font-weight:800;box-shadow:0 6px 16px rgba(10,76,143,.26)}
+  .lista b{display:block;font-size:1rem;font-weight:800;margin-bottom:3px}
+  .lista span{font-size:.92rem;color:var(--cinza);line-height:1.6}
+  .caixa{background:var(--branco);border-radius:var(--r-g);padding:28px;box-shadow:var(--sombra-m);position:relative;overflow:hidden}
+  .caixa:before{content:"";position:absolute;width:220px;height:220px;top:-110px;right:-80px;border-radius:50%;
+    background:radial-gradient(circle,var(--gelo-luz),rgba(234,248,254,0) 70%)}
+  .caixa > *{position:relative}
+  .caixa h3{font-size:1.22rem;font-weight:800;margin-bottom:12px;letter-spacing:-.025em}
+  .caixa p{font-size:.94rem;color:var(--cinza);line-height:1.65;margin-bottom:14px}
+
+  /* ---------- faq ---------- */
+  .faq{max-width:760px;margin:34px auto 0}
+  .faq details{background:var(--branco);border-radius:var(--r);margin-bottom:11px;overflow:hidden;
+    box-shadow:var(--sombra-s);transition:box-shadow .25s}
+  .faq details[open]{box-shadow:var(--sombra-m)}
+  .faq summary{cursor:pointer;list-style:none;padding:18px 20px;font-size:.99rem;font-weight:700;
+    display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .mais{flex:0 0 26px;height:26px;border-radius:50%;background:var(--gelo-luz);color:var(--gelo-esc);
+    display:grid;place-items:center;font-size:1.15rem;font-weight:600;line-height:0;transition:transform .3s,background .25s}
+  .faq details[open] summary .mais{transform:rotate(45deg);background:var(--gelo);color:#fff}
+  .faq .resp{padding:0 20px 20px;font-size:.93rem;color:var(--cinza);line-height:1.7}
+
+  /* ---------- cta final ---------- */
+  .fechamento{position:relative;overflow:hidden;color:#fff;text-align:center;
+    background:linear-gradient(150deg,#052744,#0A4C8F 60%,#0E63A8)}
+  .fechamento .wrap{position:relative;z-index:2}
+  .fechamento h2{color:#fff;max-width:660px;margin:0 auto 14px}
+  .fechamento h2 em{background:linear-gradient(100deg,#7FE6FF,#B6F3FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .fechamento p{color:#B6D0E4;max-width:560px;margin:0 auto 30px;font-size:1.03rem}
+  .fechamento .btn{margin:0 6px 10px}
+
+  /* ---------- rodapé ---------- */
+  .rodape{background:#04202F;color:#8AA6B9;padding:42px 0 28px;font-size:.87rem;line-height:1.8}
+  .rodape .wrap{display:grid;gap:26px;grid-template-columns:1fr}
+  @media(min-width:760px){.rodape .wrap{grid-template-columns:1.3fr 1fr 1fr}}
+  .rodape b{display:block;color:#fff;font-size:.93rem;font-weight:800;margin-bottom:9px}
+  .rodape a{color:#8AA6B9;text-decoration:none;transition:color .2s}
+  .rodape a:hover{color:#fff}
+  .rodape .logo-pe{width:46px;height:46px;border-radius:50%;margin-bottom:14px}
+  .rodape .base{border-top:1px solid rgba(255,255,255,.09);margin-top:30px;padding-top:20px;
+    font-size:.79rem;color:#5A7488}
+
+  /* marcador de pendência, visível de propósito até ser resolvido */
+  .pendente{background:#FFF3CD;color:#7A5A00;border:1px dashed #D9A400;border-radius:6px;
+    padding:1px 7px;font-size:.82rem;font-weight:700;display:inline-block}
+
+  /* barra flutuante mobile */
+  .flutua{position:fixed;left:14px;right:14px;bottom:14px;z-index:70;
+    transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+  .flutua.on{transform:none}
+  .flutua .btn{width:100%;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+  @media(min-width:760px){.flutua{display:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.className += " js";</script>
+
+<!-- ícones reutilizáveis -->
+<svg class="sr" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.13h-.01a8.23 8.23 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 015.83 2.42 8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.22-8.24 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.09-.17.04-.31-.02-.43-.06-.12-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+  </symbol>
+  <symbol id="i-caminhao" viewBox="0 0 24 24"><path d="M3 5a2 2 0 00-2 2v9a2 2 0 002 2h.18a3 3 0 005.64 0h6.36a3 3 0 005.64 0H22a1 1 0 001-1v-4a1 1 0 00-.11-.45l-2-4A1 1 0 0020 8h-3V7a2 2 0 00-2-2H3zm14 5h2.38l1.5 3H17v-3zM6 17a1 1 0 112 0 1 1 0 01-2 0zm12 0a1 1 0 112 0 1 1 0 01-2 0z"/></symbol>
+  <symbol id="i-chave" viewBox="0 0 24 24"><path d="M21.7 5.3l-3-3a1 1 0 00-1.4 0l-2.6 2.6a5.5 5.5 0 00-6.9 7.2l-5.5 5.5a1 1 0 00-.3.7V21a1 1 0 001 1h2.7a1 1 0 00.7-.3l5.5-5.5a5.5 5.5 0 007.2-6.9l2.6-2.6a1 1 0 000-1.4zM16.5 11a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><path d="M4 3h16l1.5 5a3 3 0 01-2.5 3.4V20a1 1 0 01-1 1h-4v-6h-4v6H6a1 1 0 01-1-1v-8.6A3 3 0 012.5 8L4 3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></symbol>
+</svg>
+
+<!-- ====================== TOPO ====================== -->
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#" class="marca">
+      <img src="assets/logo.png" alt="Bebedouros e Cia" width="42" height="42">
+      <span>
+        <b>Bebedouros &amp; Cia</b>
+        <small>Máquinas de gelo · Vitória/ES</small>
+      </span>
+    </a>
+    <div class="topo-acao">
+      <a href="tel:+552733202600" class="tel-topo">(27) 3320-2600</a>
+      <a href="#" class="btn btn-zap btn-sm" data-zap data-origem="topo">
+        <svg class="ic"><use href="#i-zap"></use></svg> WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ====================== HERÓI ====================== -->
+<div class="heroi">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+
+  <div class="wrap">
+    <div class="heroi-grid">
+      <div>
+        <span class="selo"><i class="pt"></i> Frete e instalação grátis em até 3 dias</span>
+        <h1>Seu negócio não pode ficar sem gelo. <em>E não precisa mais comprar gelo.</em></h1>
+        <p class="lead">Máquinas de gelo em cubo de <b>50 a 300 kg por dia</b> para bares, restaurantes, hotéis, padarias e distribuidoras. A gente ajuda a escolher o tamanho certo, entrega e instala.</p>
+        <div class="heroi-ctas">
+          <a href="#seletor" class="btn btn-azul">Descobrir minha máquina</a>
+          <a href="#" class="btn btn-luz" data-zap data-origem="heroi">
+            <svg class="ic"><use href="#i-zap"></use></svg> Falar agora
+          </a>
+        </div>
+        <p class="heroi-pe">
+          <svg viewBox="0 0 24 24"><use href="#i-pin"></use></svg>
+          Av. Jerônimo Monteiro, 1445, Centro, Vitória/ES · (27) 3320-2600
+        </p>
+      </div>
+
+      <div class="palco">
+        <span class="halo"></span>
+        <span class="chao"></span>
+        <img src="assets/egc-150m140.png" alt="Máquina de gelo Everest EGC 150M/140" fetchpriority="high">
+        <div class="balao balao-1"><b>300 kg</b><small>por dia no maior modelo</small></div>
+        <div class="balao balao-2"><b>2 dias</b><small>para o envio do pedido</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="onda">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#fff" d="M0,54 C220,104 420,4 720,34 C1010,63 1220,104 1440,64 L1440,100 L0,100 Z"></path>
+    </svg>
+  </div>
+</div>
+
+<!-- ====================== SELETOR ====================== -->
+<section class="zona-seletor" id="seletor">
+  <div class="wrap">
+    <div class="cartao rev">
+      <div class="sel-topo" id="selTopo">
+        <div class="sel-passos"><span>Passo <b id="passoAtual">1</b> de 3</span><span id="passoNome">Seu negócio</span></div>
+        <div class="trilho"><i id="trilhoFill"></i></div>
+      </div>
+
+      <div class="sel-corpo" id="selCorpo">
+
+        <!-- ETAPA 1 -->
+        <div class="etapa on" data-etapa="1">
+          <p class="pergunta">Qual é o seu tipo de negócio?</p>
+          <p class="ajuda">Cada operação usa o gelo de um jeito, e isso muda a recomendação.</p>
+          <div class="opcoes duas" id="opSegmento">
+            <button type="button" class="op" data-valor="Bar ou restaurante"><span class="mk"></span>Bar ou restaurante</button>
+            <button type="button" class="op" data-valor="Hotel ou pousada"><span class="mk"></span>Hotel ou pousada</button>
+            <button type="button" class="op" data-valor="Padaria, mercado ou conveniência"><span class="mk"></span>Padaria, mercado ou conveniência</button>
+            <button type="button" class="op" data-valor="Distribuidora ou revenda de gelo"><span class="mk"></span>Distribuidora ou revenda de gelo</button>
+            <button type="button" class="op" data-valor="Eventos e buffet"><span class="mk"></span>Eventos e buffet</button>
+            <button type="button" class="op" data-valor="Outro"><span class="mk"></span>Outro tipo de negócio</button>
+          </div>
+        </div>
+
+        <!-- ETAPA 2 -->
+        <div class="etapa" data-etapa="2">
+          <p class="pergunta">Quanto gelo o seu negócio consome?</p>
+          <p class="ajuda">Se você não souber em quilos, use a segunda opção. A conta é nossa.</p>
+          <div class="opcoes" id="opModo">
+            <button type="button" class="op" data-valor="kg"><span class="mk"></span>Sei quantos quilos por dia</button>
+            <button type="button" class="op" data-valor="sacos"><span class="mk"></span>Compro gelo pronto em sacos</button>
+            <button type="button" class="op" data-valor="nao_sei"><span class="mk"></span>Não faço ideia, quero ajuda para calcular</button>
+          </div>
+
+          <div id="blocoKg" style="display:none;margin-top:20px">
+            <div class="campo">
+              <label for="inKg">Consumo aproximado por dia (kg)</label>
+              <input type="number" id="inKg" inputmode="numeric" min="1" max="5000" placeholder="Ex.: 80">
+            </div>
+          </div>
+
+          <div id="blocoSacos" style="display:none;margin-top:20px">
+            <div class="campo">
+              <label for="inSacos">Quantos sacos de 5 kg você compra por semana?</label>
+              <input type="number" id="inSacos" inputmode="numeric" min="1" max="2000" placeholder="Ex.: 40">
+              <small class="dica">Convertemos para o consumo diário do seu negócio.</small>
+            </div>
+            <div class="campo">
+              <label for="inPreco">Quanto você paga por saco? (opcional)</label>
+              <input type="text" id="inPreco" inputmode="decimal" placeholder="Ex.: 15,00">
+              <small class="dica">Com esse número mostramos em quanto tempo a máquina se paga.</small>
+            </div>
+          </div>
+
+          <p class="erro" id="erro2">Preencha o campo para continuar.</p>
+          <button type="button" class="btn btn-azul btn-larg" id="btnEtapa2" style="margin-top:8px" disabled>Continuar</button>
+          <button type="button" class="voltar" data-voltar="1">Voltar</button>
+        </div>
+
+        <!-- ETAPA 3 -->
+        <div class="etapa" data-etapa="3">
+          <p class="pergunta">Só falta saber quem é você</p>
+          <p class="ajuda">Ao continuar, abrimos o WhatsApp com a sua recomendação já escrita. Você só aperta enviar.</p>
+          <div class="campo">
+            <label for="inNome">Seu nome</label>
+            <input type="text" id="inNome" autocomplete="name" placeholder="Como podemos te chamar">
+          </div>
+          <div class="campo">
+            <label for="inFone">Seu WhatsApp com DDD</label>
+            <input type="tel" id="inFone" inputmode="numeric" autocomplete="tel" placeholder="(27) 99999-9999">
+          </div>
+          <p class="erro" id="erro3">Preencha o nome e um WhatsApp válido com DDD.</p>
+          <button type="button" class="btn btn-zap btn-larg pulsa" id="btnEnviar">
+            <svg class="ic"><use href="#i-zap"></use></svg> Ver minha máquina e abrir o WhatsApp
+          </button>
+          <p class="lgpd">Usamos seus dados apenas para te atender sobre esta solicitação.</p>
+          <button type="button" class="voltar" data-voltar="2">Voltar</button>
+        </div>
+
+      </div><!-- /sel-corpo -->
+
+      <!-- RESULTADO -->
+      <div class="resultado" id="resultado">
+        <div class="res-topo">
+          <span class="blob"></span>
+          <div class="res-txt">
+            <small id="resRotulo">Recomendado para o seu consumo</small>
+            <b id="resModelo">—</b>
+            <span id="resResumo">—</span>
+          </div>
+          <img class="res-foto" id="resFoto" src="assets/egc-150m140.png" alt="">
+        </div>
+        <div class="res-corpo">
+          <div class="specs">
+            <div><small>Produção/dia</small><b id="resProducao">—</b></div>
+            <div><small>Reservatório</small><b id="resReserva">—</b></div>
+            <div><small>Gelo</small><b>Cubo</b></div>
+            <div><small>Valor</small><b id="resPreco">—</b></div>
+          </div>
+
+          <p class="nota-modelo" id="notaModelo" style="display:none"></p>
+
+          <div class="economia" id="blocoEconomia" style="display:none">
+            <b>O que você gasta hoje comprando gelo</b>
+            <p id="txtEconomia">—</p>
+            <small>Conta simplificada, considerando apenas o gelo que você deixa de comprar. Não inclui energia e manutenção. Nosso especialista faz o cálculo completo com você.</small>
+          </div>
+
+          <a href="#" class="btn btn-zap btn-larg pulsa" data-zap data-origem="resultado">
+            <svg class="ic"><use href="#i-zap"></use></svg> Reabrir o WhatsApp
+          </a>
+          <p class="res-nota">A recomendação é uma estimativa a partir do que você informou. O especialista confirma o modelo considerando o pico do seu movimento antes de fechar qualquer proposta.</p>
+        </div>
+      </div>
+
+    </div><!-- /cartao -->
+  </div>
+</section>
+
+<!-- ====================== CONFIANÇA ====================== -->
+<div class="confianca">
+  <div class="wrap">
+    <ul class="rev">
+      <li><span class="bolha"><svg viewBox="0 0 24 24"><use href="#i-caminhao"></use></svg></span>
+          <div><b>Envio em 2 dias</b><span>Pedido fechado hoje, equipamento a caminho em dois dias.</span></div></li>
+      <li><span class="bolha"><svg viewBox="0 0 24 24"><use href="#i-chave"></use></svg></span>
+          <div><b>Instalação inclusa</b><span>Nossa equipe entrega, instala e ensina a operar.</span></div></li>
+      <li><span class="bolha"><svg viewBox="0 0 24 24"><use href="#i-escudo"></use></svg></span>
+          <div><b>Assistência própria</b><span>Se a máquina parar, quem atende é quem vendeu.</span></div></li>
+      <li><span class="bolha"><svg viewBox="0 0 24 24"><use href="#i-loja"></use></svg></span>
+          <div><b>Loja física em Vitória</b><span>Empresa com endereço, telefone fixo e time no local.</span></div></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ====================== MODELOS ====================== -->
+<section class="nevoa" id="modelos">
+  <div class="wrap">
+    <div class="rev">
+      <span class="kicker">Linha Everest</span>
+      <h2>Seis tamanhos, <em>do bar de bairro à distribuidora</em></h2>
+      <p class="sub">Todos em gelo cubo, com frete e instalação grátis em até 3 dias. Se já sabe o que quer, fale direto com a equipe.</p>
+    </div>
+
+    <div class="modelos" id="gradeModelos"></div>
+
+    <p class="nota-tabela rev">Produção nominal em 24 horas. A produção real varia com a temperatura do ambiente: o EGC 150M/140, por exemplo, produz 162 kg a 22 °C e 144 kg a 32 °C. É por isso que a escolha do modelo considera o seu pico de movimento, não a média. Disponível em 127V e 220V.</p>
+  </div>
+</section>
+
+<!-- ====================== OBJEÇÃO ====================== -->
+<section>
+  <div class="wrap duas-col">
+    <div class="rev">
+      <span class="kicker">A conta que ninguém faz</span>
+      <h2>Comprar gelo é uma despesa que <em>nunca acaba</em></h2>
+      <p class="sub">Máquina de gelo não é uma compra, é a troca de um custo mensal permanente por um equipamento que fica no seu negócio. A diferença aparece em três lugares:</p>
+      <ul class="lista">
+        <li><span class="n">1</span><div><b>O que você paga por saco, todo mês, para sempre</b><span>Enquanto você compra gelo, esse valor sai do caixa todo mês e não volta. A máquina tem um custo que termina.</span></div></li>
+        <li><span class="n">2</span><div><b>O fim de semana em que o gelo acaba</b><span>Justamente no pico do movimento, quando o fornecedor não entrega e a venda que você perde não volta na segunda.</span></div></li>
+        <li><span class="n">3</span><div><b>O espaço de câmara ocupado por saco de gelo</b><span>Gelo comprado precisa ser estocado. Gelo produzido fica no reservatório da própria máquina.</span></div></li>
+      </ul>
+    </div>
+    <div class="caixa rev">
+      <h3>E se eu escolher a máquina errada?</h3>
+      <p>Essa é a dúvida que mais trava a decisão, e é a razão de a nossa conversa começar pelo uso e não pelo produto. Antes de qualquer proposta, entendemos quanto gelo o seu negócio consome no pico, onde a máquina vai ficar e qual a voltagem disponível.</p>
+      <p>Se o modelo que você tem em mente não for o adequado, a gente vai dizer, mesmo quando isso significa vender uma máquina mais barata.</p>
+      <a href="#" class="btn btn-azul btn-larg" data-zap data-origem="objecao">
+        <svg class="ic"><use href="#i-zap"></use></svg> Falar com um especialista
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FAQ ====================== -->
+<section class="nevoa">
+  <div class="wrap">
+    <div class="txt-c rev" style="max-width:640px;margin:0 auto">
+      <span class="kicker">Perguntas frequentes</span>
+      <h2>O que costumam <em>perguntar antes de fechar</em></h2>
+    </div>
+    <div class="faq rev">
+      <details open>
+        <summary>O frete e a instalação são realmente grátis? <span class="mais">+</span></summary>
+        <div class="resp">Sim. Frete e instalação estão inclusos, com prazo de até 3 dias, e o pedido é enviado em 2 dias.
+          <span class="pendente">[CONFIRMAR] raio de atendimento coberto pela instalação grátis</span></div>
+      </details>
+      <details>
+        <summary>Como sei qual tamanho o meu negócio precisa? <span class="mais">+</span></summary>
+        <div class="resp">Use o seletor no topo desta página para ter uma primeira indicação a partir do seu consumo. Depois, o especialista confirma considerando o pico do seu movimento, e não a média, que é onde a maioria dos erros de dimensionamento acontece.</div>
+      </details>
+      <details>
+        <summary>Qual a voltagem? <span class="mais">+</span></summary>
+        <div class="resp">Os modelos estão disponíveis em 127V e 220V. A voltagem é confirmada no fechamento do pedido, junto com o ponto de instalação.</div>
+      </details>
+      <details>
+        <summary>Qual a garantia do equipamento? <span class="mais">+</span></summary>
+        <div class="resp"><span class="pendente">[CONFIRMAR] prazo e cobertura da garantia</span> Contamos com assistência técnica própria: se a máquina apresentar problema, o atendimento é feito por quem vendeu.</div>
+      </details>
+      <details>
+        <summary>Dá para parcelar? <span class="mais">+</span></summary>
+        <div class="resp"><span class="pendente">[CONFIRMAR] número de parcelas, juros e condição para CNPJ</span></div>
+      </details>
+      <details>
+        <summary>Vocês atendem empresa (CNPJ)? <span class="mais">+</span></summary>
+        <div class="resp">Sim. A maior parte das máquinas de gelo é vendida para bares, restaurantes, hotéis, padarias, distribuidoras e produtoras de evento. A nota é emitida normalmente para CNPJ.</div>
+      </details>
+      <details>
+        <summary>Depois de instalada, quem dá suporte? <span class="mais">+</span></summary>
+        <div class="resp">A própria Bebedouros e Cia, com equipe técnica e loja física em Vitória. Você fala com a mesma empresa que vendeu e instalou, no mesmo telefone: (27) 3320-2600.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FECHAMENTO ====================== -->
+<section class="fechamento">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <div class="wrap">
+    <h2 class="rev">Descubra hoje qual máquina <em>resolve o seu movimento</em></h2>
+    <p class="rev">Três perguntas, a indicação do modelo e uma conversa com quem entende do assunto. Sem compromisso.</p>
+    <div class="rev">
+      <a href="#seletor" class="btn btn-branco">Descobrir minha máquina</a>
+      <a href="#" class="btn btn-zap" data-zap data-origem="cta_final">
+        <svg class="ic"><use href="#i-zap"></use></svg> Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== RODAPÉ ====================== -->
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo.png" class="logo-pe" alt="Bebedouros e Cia" width="46" height="46">
+      <b>Bebedouros &amp; Cia</b>
+      Bebedouros, purificadores, filtros centrais e máquinas de gelo.<br>
+      Av. Jerônimo Monteiro, 1445, Centro, Vitória/ES.
+    </div>
+    <div>
+      <b>Contato</b>
+      <a href="tel:+552733202600">(27) 3320-2600</a><br>
+      <a href="mailto:contato@bebedourosecia.com.br">contato@bebedourosecia.com.br</a><br>
+      <a href="#" data-zap data-origem="rodape">WhatsApp</a>
+    </div>
+    <div>
+      <b>Institucional</b>
+      <a href="https://bebedourosecia.com.br/" target="_blank" rel="noopener">Site oficial</a>
+    </div>
+    <div class="base" style="grid-column:1/-1">
+      Preços e disponibilidade sujeitos a alteração sem aviso prévio. Imagens meramente ilustrativas.
+    </div>
+  </div>
+</footer>
+
+<div class="flutua" id="flutua">
+  <a href="#seletor" class="btn btn-azul">Descobrir minha máquina em 1 minuto</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ==========================================================================
+     CONFIGURAÇÃO — preencher antes de publicar
+     ========================================================================== */
+  var CFG = {
+    // Número de destino, formato internacional só com dígitos.
+    // ATENÇÃO: precisa ser o número da API que alimenta o CRM (GoHighLevel),
+    // senão o lead não é registrado. O site divulga também o 27 99269 2582.
+    whatsapp: "552733202600",
+
+    // Endpoint que recebe o lead (n8n ou webhook do GoHighLevel). Vazio = não envia.
+    webhook: "",
+
+    /* ---- rastreamento ----------------------------------------------------
+       Modo padrão: tags diretas (gtag.js + fbq). Preencha os IDs abaixo.
+       Cada campo vazio simplesmente não carrega nada, sem quebrar a página.
+
+       Se preferir governar tudo por Google Tag Manager, preencha SÓ o campo
+       `gtm`: com ele preenchido as tags diretas são desligadas automaticamente
+       e os eventos seguem apenas pelo dataLayer, evitando contagem dobrada.
+       ---------------------------------------------------------------------- */
+    ga4:       "",   // G-XXXXXXXXXX
+    googleAds: "",   // AW-XXXXXXXXXX
+    convLead:  "",   // AW-XXXXXXXXXX/rótulo  · conversão PRIMÁRIA (envio do seletor)
+    convZap:   "",   // AW-XXXXXXXXXX/rótulo  · conversão SECUNDÁRIA (clique WhatsApp)
+    metaPixel: "",   // 000000000000000
+    gtm:       ""    // GTM-XXXXXXX — se preenchido, desliga as tags diretas
+  };
+
+  /* ==========================================================================
+     Catálogo — dados reais do site (bebedourosecia.com.br)
+     producao = nominal 24h · reserva = reservatório · preco em R$
+     ========================================================================== */
+  var MODELOS = [
+    { id:"EGC 50",       producao:50,  reserva:6,   preco:9099,  foto:"assets/egc-50.png",
+      uso:"Bar pequeno · conveniência",  perfil:"Bar pequeno, conveniência e consumo de balcão" },
+    { id:"EGC 75M/70",   producao:75,  reserva:70,  preco:11999, foto:"assets/egc-75m70.png",
+      uso:"Restaurante · padaria",       perfil:"Restaurante e padaria com movimento constante" },
+    { id:"EGC 75M/140",  producao:75,  reserva:140, preco:12859, foto:"assets/egc-75m140.png",
+      uso:"Movimento concentrado",       perfil:"Mesma produção, reservatório dobrado para picos concentrados" },
+    { id:"EGC 150M/140", producao:150, reserva:140, preco:19099, foto:"assets/egc-150m140.png",
+      uso:"Hotel · casa de shows",       perfil:"Hotel, casa de shows e operação de alto volume" },
+    { id:"EGC 150M/250", producao:150, reserva:250, preco:21349, foto:"assets/egc-150m250.png",
+      uso:"Alto giro · eventos",         perfil:"Alto volume com estoque grande para o fim de semana" },
+    { id:"EGC 300M/250", producao:300, reserva:250, preco:35599, foto:"assets/egc-300m250.png",
+      uso:"Distribuidora · revenda",     perfil:"Distribuidora, revenda de gelo e grandes eventos" }
+  ];
+
+  var NOMES_PASSO = ["Seu negócio","Seu consumo","Seu contato"];
+  var estado = { passo:1, segmento:"", modo:"", kgDia:0, sacosSemana:0, precoSaco:0, nome:"", fone:"", modelo:null };
+
+  /* ---------------------- utilitários ---------------------- */
+  function $(s,c){ return (c||document).querySelector(s); }
+  function $$(s,c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); }
+  function brl(v){ return "R$ " + v.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:0}); }
+  function param(n){
+    var m = new RegExp("[?&]"+n+"=([^&]*)").exec(window.location.search);
+    return m ? decodeURIComponent(m[1].replace(/\+/g," ")) : "";
+  }
+  function vale(v){ return !!v && v.indexOf("XXX") === -1; }
+
+  /* ==========================================================================
+     RASTREAMENTO
+     O dataLayer é sempre alimentado, com GTM ou sem. As tags diretas só entram
+     quando não há container de GTM configurado, para nunca contar duas vezes.
+     ========================================================================== */
+  var TEM_GTM     = vale(CFG.gtm);
+  var TEM_GOOGLE  = !TEM_GTM && (vale(CFG.ga4) || vale(CFG.googleAds));
+  var TEM_META    = !TEM_GTM && vale(CFG.metaPixel);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+
+  (function carregarTags(){
+    function script(src){ var s=document.createElement("script"); s.async=true; s.src=src; document.head.appendChild(s); }
+
+    if (TEM_GTM) {
+      window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      script("https://www.googletagmanager.com/gtm.js?id=" + CFG.gtm);
+      return;
+    }
+
+    if (TEM_GOOGLE) {
+      script("https://www.googletagmanager.com/gtag/js?id=" + (vale(CFG.ga4) ? CFG.ga4 : CFG.googleAds));
+      gtag("js", new Date());
+      // allow_enhanced_conversions habilita o envio do telefone com hash no lead
+      if (vale(CFG.ga4))       gtag("config", CFG.ga4);
+      if (vale(CFG.googleAds)) gtag("config", CFG.googleAds, { allow_enhanced_conversions: true });
+    }
+
+    if (TEM_META) {
+      /* eslint-disable */
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      /* eslint-enable */
+      window.fbq("init", CFG.metaPixel);
+      window.fbq("track", "PageView");
+    }
+  })();
+
+  /* Um único ponto de saída: dataLayer sempre, Google e Meta quando diretos. */
+  function push(ev, dados){
+    dados = dados || {};
+    var o = { event: ev };
+    for (var k in dados) { if (Object.prototype.hasOwnProperty.call(dados,k)) o[k] = dados[k]; }
+    window.dataLayer.push(o);
+
+    if (ev === "lead_form_submit") {
+      if (TEM_GOOGLE) {
+        // Enhanced Conversions: o Google faz o hash do telefone no navegador
+        if (dados.telefone_e164) gtag("set", "user_data", { phone_number: dados.telefone_e164 });
+        if (vale(CFG.ga4)) gtag("event", "generate_lead", {
+          currency: "BRL", value: dados.valor_modelo || 0, modelo: dados.modelo, segmento: dados.segmento
+        });
+        if (vale(CFG.convLead)) gtag("event", "conversion", {
+          send_to: CFG.convLead, currency: "BRL", value: dados.valor_modelo || 0
+        });
+      }
+      if (TEM_META) window.fbq("track", "Lead", { currency:"BRL", value: dados.valor_modelo || 0, content_name: dados.modelo });
+    }
+
+    if (ev === "whatsapp_click") {
+      if (TEM_GOOGLE) {
+        if (vale(CFG.ga4))    gtag("event", "whatsapp_click", { origem_botao: dados.origem_botao, modelo: dados.modelo });
+        if (vale(CFG.convZap)) gtag("event", "conversion", { send_to: CFG.convZap });
+      }
+      if (TEM_META) window.fbq("trackCustom", "WhatsAppClick", { origem_botao: dados.origem_botao, modelo: dados.modelo });
+    }
+  }
+
+  /* origem do clique de anúncio, usada na mensagem e na importação offline */
+  var RASTREIO = {
+    gclid: param("gclid"),
+    utm_source: param("utm_source"),
+    utm_campaign: param("utm_campaign"),
+    utm_term: param("utm_term")
+  };
+
+  /* ---------------------- grade de modelos ---------------------- */
+  (function(){
+    var html = "";
+    for (var i = 0; i < MODELOS.length; i++) {
+      var m = MODELOS[i];
+      html +=
+        '<article class="modelo rev">' +
+          '<div class="foto"><img src="' + m.foto + '" alt="Máquina de gelo Everest ' + m.id + '" loading="lazy"></div>' +
+          '<span class="uso">' + m.uso + '</span>' +
+          '<h3>' + m.id + '</h3>' +
+          '<dl>' +
+            '<div><dt>Produção</dt><dd>' + m.producao + ' kg/dia</dd></div>' +
+            '<div><dt>Reservatório</dt><dd>' + m.reserva + ' kg</dd></div>' +
+          '</dl>' +
+          '<div class="preco">' +
+            '<div><small>a partir de</small><b>' + brl(m.preco) + '</b></div>' +
+            '<button type="button" class="zap-mini" data-zap data-origem="card_' + m.id.replace(/[^A-Za-z0-9]/g,"") + '" ' +
+              'data-modelo="' + m.id + '" aria-label="Falar sobre a ' + m.id + ' no WhatsApp">' +
+              '<svg viewBox="0 0 24 24"><use href="#i-zap"></use></svg>' +
+            '</button>' +
+          '</div>' +
+        '</article>';
+    }
+    $("#gradeModelos").innerHTML = html;
+  })();
+
+  /* ---------------------- recomendação ----------------------
+     Regra: o modelo mais barato que dá conta do consumo diário, onde "dar conta"
+     é produzir pelo menos 15% acima do consumo OU produzir o consumo com um
+     reservatório capaz de segurar um dia inteiro. O segundo caso é o que existe
+     na linha justamente para picos concentrados (75M/140, 150M/250).
+     ---------------------------------------------------------- */
+  function recomendar(kgDia){
+    if (!kgDia || kgDia <= 0) return null;
+    for (var i = 0; i < MODELOS.length; i++) {
+      var m = MODELOS[i];
+      if (m.producao < kgDia) continue;
+      if (m.producao >= kgDia * 1.15 || m.reserva >= kgDia) return m;
+    }
+    return MODELOS[MODELOS.length - 1];
+  }
+
+  function consumoDiario(){
+    if (estado.modo === "kg")    return estado.kgDia;
+    if (estado.modo === "sacos") return Math.round((estado.sacosSemana * 5) / 7);
+    return 0;
+  }
+
+  /* ---------------------- navegação ---------------------- */
+  function irPara(n){
+    estado.passo = n;
+    $$(".etapa").forEach(function(el){ el.classList.toggle("on", el.getAttribute("data-etapa") === String(n)); });
+    $("#passoAtual").textContent = n;
+    $("#passoNome").textContent = NOMES_PASSO[n-1];
+    $("#trilhoFill").style.width = (n / 3 * 100) + "%";
+    push("seletor_etapa", { etapa: n });
+  }
+
+  function marcar(grupo, botao){
+    $$(".op", grupo).forEach(function(b){ b.classList.remove("sel"); });
+    botao.classList.add("sel");
+  }
+
+  $$("#opSegmento .op").forEach(function(b){
+    b.addEventListener("click", function(){
+      if (!estado.segmento) push("seletor_inicio", {});
+      estado.segmento = b.getAttribute("data-valor");
+      marcar($("#opSegmento"), b);
+      setTimeout(function(){ irPara(2); }, 170);
+    });
+  });
+
+  $$("#opModo .op").forEach(function(b){
+    b.addEventListener("click", function(){
+      estado.modo = b.getAttribute("data-valor");
+      marcar($("#opModo"), b);
+      $("#blocoKg").style.display    = estado.modo === "kg" ? "block" : "none";
+      $("#blocoSacos").style.display = estado.modo === "sacos" ? "block" : "none";
+      $("#erro2").classList.remove("on");
+      $("#btnEtapa2").disabled = false;
+      if (estado.modo === "kg")    setTimeout(function(){ $("#inKg").focus(); }, 90);
+      if (estado.modo === "sacos") setTimeout(function(){ $("#inSacos").focus(); }, 90);
+    });
+  });
+
+  $("#btnEtapa2").addEventListener("click", function(){
+    if (estado.modo === "kg") {
+      var kg = parseInt($("#inKg").value, 10);
+      if (!kg || kg < 1) { $("#erro2").textContent = "Informe quantos quilos por dia."; $("#erro2").classList.add("on"); return; }
+      estado.kgDia = kg;
+    } else if (estado.modo === "sacos") {
+      var sc = parseInt($("#inSacos").value, 10);
+      if (!sc || sc < 1) { $("#erro2").textContent = "Informe quantos sacos por semana."; $("#erro2").classList.add("on"); return; }
+      estado.sacosSemana = sc;
+      var p = ($("#inPreco").value || "").replace(/[^\d,.]/g,"").replace(/\./g,"").replace(",",".");
+      estado.precoSaco = parseFloat(p) || 0;
+    }
+    $("#erro2").classList.remove("on");
+    irPara(3);
+  });
+
+  $$("[data-voltar]").forEach(function(b){
+    b.addEventListener("click", function(){ irPara(parseInt(b.getAttribute("data-voltar"),10)); });
+  });
+
+  $("#inFone").addEventListener("input", function(e){
+    var v = e.target.value.replace(/\D/g,"").slice(0,11);
+    if (v.length > 6)      v = "(" + v.slice(0,2) + ") " + v.slice(2,7) + "-" + v.slice(7);
+    else if (v.length > 2) v = "(" + v.slice(0,2) + ") " + v.slice(2);
+    else if (v.length > 0) v = "(" + v;
+    e.target.value = v;
+  });
+  $("#inFone").addEventListener("keydown", function(e){ if (e.key === "Enter") $("#btnEnviar").click(); });
+
+  /* ---------------------- WhatsApp ---------------------- */
+  function mensagem(modeloForcado){
+    var l = [];
+    var m = modeloForcado || estado.modelo;
+    var kg = consumoDiario();
+
+    if (m && estado.nome) {
+      l.push("Olá! Vim pelo site e usei o guia de escolha da máquina de gelo.");
+      l.push("");
+      l.push("Nome: " + estado.nome);
+      if (estado.segmento) l.push("Negócio: " + estado.segmento);
+      if (kg) l.push("Consumo: cerca de " + kg + " kg de gelo por dia");
+      l.push("Modelo indicado: " + m.id + " (" + m.producao + " kg/dia, reservatório " + m.reserva + " kg)");
+      l.push("");
+      l.push("Gostaria de receber a proposta.");
+    } else if (m) {
+      l.push("Olá! Vim pelo site e quero saber sobre a máquina de gelo " + m.id + ".");
+      l.push("(" + m.producao + " kg por dia, reservatório de " + m.reserva + " kg)");
+    } else if (estado.nome) {
+      l.push("Olá! Vim pelo site e quero uma máquina de gelo.");
+      l.push("");
+      l.push("Nome: " + estado.nome);
+      if (estado.segmento) l.push("Negócio: " + estado.segmento);
+      l.push("Ainda não sei qual capacidade preciso, gostaria de ajuda para escolher.");
+    } else {
+      l.push("Olá! Vim pelo site e quero falar sobre máquina de gelo para o meu negócio.");
+    }
+
+    if (RASTREIO.gclid) { l.push(""); l.push("ref: " + RASTREIO.gclid.slice(0,24)); }
+    return l.join("\n");
+  }
+
+  function urlZap(modeloForcado){
+    return "https://wa.me/" + CFG.whatsapp + "?text=" + encodeURIComponent(mensagem(modeloForcado));
+  }
+
+  /* delegação: pega inclusive os botões dos cards, montados por JS */
+  document.addEventListener("click", function(e){
+    var alvo = e.target.closest ? e.target.closest("[data-zap]") : null;
+    if (!alvo) return;
+    e.preventDefault();
+
+    var forcado = null;
+    var idModelo = alvo.getAttribute("data-modelo");
+    if (idModelo) {
+      for (var i = 0; i < MODELOS.length; i++) { if (MODELOS[i].id === idModelo) { forcado = MODELOS[i]; break; } }
+    }
+
+    push("whatsapp_click", {
+      origem_botao: alvo.getAttribute("data-origem") || "indefinido",
+      tem_lead: !!estado.nome,
+      modelo: forcado ? forcado.id : (estado.modelo ? estado.modelo.id : ""),
+      gclid: RASTREIO.gclid
+    });
+
+    window.open(urlZap(forcado), "_blank", "noopener");
+  });
+
+  /* ---------------------- envio (passo 3) ----------------------
+     O clique abre o WhatsApp na MESMA interação do usuário, senão o bloqueador
+     de pop-up do navegador mobile cancela a abertura. Só depois disso é que a
+     página monta o resultado e dispara webhook e conversão.
+     ------------------------------------------------------------- */
+  $("#btnEnviar").addEventListener("click", function(){
+    var nome = $("#inNome").value.trim();
+    var fone = $("#inFone").value.replace(/\D/g,"");
+    if (nome.length < 2 || fone.length < 10) { $("#erro3").classList.add("on"); return; }
+    $("#erro3").classList.remove("on");
+
+    estado.nome = nome;
+    estado.fone = fone;
+    var kg = consumoDiario();
+    estado.modelo = recomendar(kg);
+
+    // 1. abre o WhatsApp com a mensagem pronta, ainda dentro do gesto do usuário
+    window.open(urlZap(), "_blank", "noopener");
+
+    // 2. conversão primária do Google Ads
+    push("lead_form_submit", {
+      segmento: estado.segmento,
+      consumo_kg_dia: kg,
+      modelo: estado.modelo ? estado.modelo.id : "a_definir",
+      valor_modelo: estado.modelo ? estado.modelo.preco : 0,
+      telefone_e164: "+55" + fone,   // usado só pelo Enhanced Conversions, com hash no navegador
+      gclid: RASTREIO.gclid
+    });
+
+    // 3. lead para o CRM, mesmo que a pessoa não envie a mensagem
+    enviarWebhook(kg);
+
+    // 4. resultado fica na página, para quando a pessoa voltar do WhatsApp
+    montarResultado(kg);
+    $("#selTopo").style.display = "none";
+    $("#selCorpo").style.display = "none";
+    $("#resultado").classList.add("on");
+    $("#resultado").scrollIntoView({ behavior:"smooth", block:"center" });
+  });
+
+  function montarResultado(kg){
+    var m = estado.modelo;
+
+    if (!m) {
+      $("#resRotulo").textContent = "Vamos calcular junto";
+      $("#resModelo").textContent = "Dimensionamos para você";
+      $("#resResumo").textContent = "Com duas ou três perguntas sobre o seu movimento chegamos ao modelo certo.";
+      $("#resProducao").textContent = "a definir";
+      $("#resReserva").textContent  = "a definir";
+      $("#resPreco").textContent    = "R$ 9.099+";
+      $("#resFoto").src = "assets/egc-75m70.png";
+      $("#resFoto").alt = "Linha de máquinas de gelo Everest";
+      return;
+    }
+
+    $("#resRotulo").textContent = "Recomendado para " + kg + " kg por dia";
+    $("#resModelo").textContent = m.id;
+    $("#resResumo").textContent = "Dá conta dos seus " + kg + " kg por dia com folga para o pico do movimento.";
+    $("#resProducao").textContent = m.producao + " kg";
+    $("#resReserva").textContent  = m.reserva + " kg";
+    $("#resPreco").textContent    = brl(m.preco);
+    $("#resFoto").src = m.foto;
+    $("#resFoto").alt = "Máquina de gelo Everest " + m.id;
+
+    // ressalvas honestas, no lugar de fingir precisão
+    var nota = "";
+    if (kg > m.producao) {
+      nota = "O seu consumo está acima da produção do maior modelo da linha. Nesses casos trabalhamos com dimensionamento sob medida, que pode envolver mais de uma máquina ou um reservatório externo. Fale com a equipe para montarmos a solução.";
+    } else if (m.reserva < kg * 0.5) {
+      nota = "Atenção ao reservatório: são " + m.reserva + " kg de armazenagem para um consumo de " + kg +
+             " kg por dia, ou seja, a máquina produz ao longo do dia. Se o seu movimento se concentra em poucas horas, vale avaliar um modelo com reservatório maior. O especialista confirma isso com você.";
+    }
+    if (nota) { $("#notaModelo").textContent = nota; $("#notaModelo").style.display = "block"; }
+
+    // economia só aparece quando o próprio visitante informou o preço que paga
+    if (estado.modo === "sacos" && estado.precoSaco > 0 && estado.sacosSemana > 0) {
+      var mes   = estado.precoSaco * estado.sacosSemana * 4.33;
+      var ano   = mes * 12;
+      var meses = Math.ceil(m.preco / mes);
+      $("#txtEconomia").innerHTML =
+        "Pelo que você informou, são cerca de <strong>" + brl(Math.round(mes)) + " por mês</strong> em gelo comprado, " +
+        "ou <strong>" + brl(Math.round(ano)) + " por ano</strong>. Nesse ritmo, o " + m.id +
+        " se paga em aproximadamente <strong>" + meses + " " + (meses === 1 ? "mês" : "meses") + "</strong> e o gelo passa a ser seu.";
+      $("#blocoEconomia").style.display = "block";
+    }
+  }
+
+  function enviarWebhook(kg){
+    if (!CFG.webhook) return;
+    var payload = {
+      origem: "LP Máquinas de Gelo",
+      nome: estado.nome,
+      telefone: estado.fone,
+      segmento: estado.segmento,
+      consumo_kg_dia: kg,
+      modo_informado: estado.modo,
+      sacos_semana: estado.sacosSemana || null,
+      preco_saco: estado.precoSaco || null,
+      modelo_recomendado: estado.modelo ? estado.modelo.id : null,
+      valor_modelo: estado.modelo ? estado.modelo.preco : null,
+      gclid: RASTREIO.gclid || null,
+      utm_source: RASTREIO.utm_source || null,
+      utm_campaign: RASTREIO.utm_campaign || null,
+      utm_term: RASTREIO.utm_term || null,
+      pagina: window.location.href,
+      enviado_em: new Date().toISOString()
+    };
+    try {
+      fetch(CFG.webhook, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true
+      })["catch"](function(){ /* falha no webhook não pode travar o atendimento */ });
+    } catch(e){}
+  }
+
+  /* ---------------------- revelação e topo ---------------------- */
+  function revelarTudo(){ $$(".rev").forEach(function(el){ el.classList.add("vis"); }); }
+
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add("vis"); obs.unobserve(en.target); }
+      });
+    }, { rootMargin:"0px 0px -60px 0px", threshold:0 });
+    $$(".rev").forEach(function(el,i){
+      el.style.transitionDelay = (Math.min(i,4) * 70) + "ms";
+      obs.observe(el);
+    });
+    // rede de segurança: nada pode ficar invisível por falha do observer
+    setTimeout(revelarTudo, 2600);
+  } else {
+    revelarTudo();
+  }
+
+  var flutua = $("#flutua"), topo = $("#topo"), seletor = $("#seletor");
+  window.addEventListener("scroll", function(){
+    var y = window.scrollY;
+    topo.classList.toggle("desceu", y > 12);
+    var fim = seletor.offsetTop + seletor.offsetHeight;
+    flutua.classList.toggle("on", y > 620 && (y + window.innerHeight < fim || y > fim));
+  }, { passive:true });
+
+  push("lp_view", { gclid: RASTREIO.gclid, utm_campaign: RASTREIO.utm_campaign });
+
+})();
+</script>
+</body>
+</html>
