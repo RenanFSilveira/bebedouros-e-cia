@@ -694,10 +694,10 @@
     // Número de destino, formato internacional só com dígitos.
     // ATENÇÃO: precisa ser o número da API que alimenta o CRM (GoHighLevel),
     // senão o lead não é registrado. O site divulga também o 27 99269 2582.
-    whatsapp: "552733202600",
+    whatsapp:  "552733202600",
 
     // Endpoint que recebe o lead (n8n ou webhook do GoHighLevel). Vazio = não envia.
-    webhook: "",
+    webhook:   "",
 
     /* ---- rastreamento ----------------------------------------------------
        Modo padrão: tags diretas (gtag.js + fbq). Preencha os IDs abaixo.
@@ -1091,18 +1091,22 @@
     var payload = {
       origem: "LP Máquinas de Gelo",
       nome: estado.nome,
-      telefone: estado.fone,
+      // E.164 de propósito: o CRM guarda o telefone nesse formato e deduplica por ele.
+      // Mandar só os dígitos criaria contato novo para quem já está na base.
+      telefone: "+55" + estado.fone,
       segmento: estado.segmento,
       consumo_kg_dia: kg,
       modo_informado: estado.modo,
-      sacos_semana: estado.sacosSemana || null,
-      preco_saco: estado.precoSaco || null,
-      modelo_recomendado: estado.modelo ? estado.modelo.id : null,
-      valor_modelo: estado.modelo ? estado.modelo.preco : null,
-      gclid: RASTREIO.gclid || null,
-      utm_source: RASTREIO.utm_source || null,
-      utm_campaign: RASTREIO.utm_campaign || null,
-      utm_term: RASTREIO.utm_term || null,
+      sacos_semana: estado.sacosSemana || 0,
+      preco_saco: estado.precoSaco || 0,
+      // Campo ausente vai como "" e não como null: o mapeamento de webhook do CRM
+      // infere o tipo pelo payload de exemplo, e null deixa o campo sem tipo.
+      modelo_recomendado: estado.modelo ? estado.modelo.id : "",
+      valor_modelo: estado.modelo ? estado.modelo.preco : 0,
+      gclid: RASTREIO.gclid || "",
+      utm_source: RASTREIO.utm_source || "",
+      utm_campaign: RASTREIO.utm_campaign || "",
+      utm_term: RASTREIO.utm_term || "",
       pagina: window.location.href,
       enviado_em: new Date().toISOString()
     };
