@@ -56,6 +56,8 @@ O `dataLayer` é sempre alimentado, com GTM ou sem. Eventos:
 
 Sem GTM, a página dispara direto: `generate_lead` e a conversão do Google Ads (com Enhanced Conversions, o telefone tem hash feito no navegador), mais `Lead` e `WhatsAppClick` no Meta.
 
+**Nenhum evento de anúncio leva valor monetário, e isso é intencional.** Lead não é venda: mandar o preço da máquina no evento faria Google e Meta reportarem receita que não existe. As duas conversões do Google Ads estão configuradas como "não usar valor". O preço continua indo para o `dataLayer` e para o webhook do CRM, que é de onde a conversão offline lê o faturamento real. Não recolocar `value` nos eventos sem essa conversa.
+
 O `gclid` é lido da URL, enviado no webhook e incluído na mensagem do WhatsApp, para permitir importação de conversão offline quando a venda fechar.
 
 ---

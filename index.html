@@ -715,10 +715,10 @@
        `gtm`: com ele preenchido as tags diretas são desligadas automaticamente
        e os eventos seguem apenas pelo dataLayer, evitando contagem dobrada.
        ---------------------------------------------------------------------- */
-    ga4:       "",   // G-XXXXXXXXXX
-    googleAds: "",   // AW-XXXXXXXXXX
-    convLead:  "",   // AW-XXXXXXXXXX/rótulo  · conversão PRIMÁRIA (envio do seletor)
-    convZap:   "",   // AW-XXXXXXXXXX/rótulo  · conversão SECUNDÁRIA (clique WhatsApp)
+    ga4:       "",   // G-XXXXXXXXXX — propriedade ainda não criada
+    googleAds: "AW-991482558",
+    convLead:  "AW-991482558/MNijCIm-mOMcEL6l49gD",   // Lead - Seletor Gelo (id 7724211977), PRIMÁRIA
+    convZap:   "AW-991482558/Xkb1CIy-mOMcEL6l49gD",   // Clique WhatsApp - LP Gelo (id 7724211980), secundária
     metaPixel: "794227009044920",   // pixel da conta act_1334609130273106
     gtm:       ""    // GTM-XXXXXXX — se preenchido, desliga as tags diretas
   };
@@ -808,14 +808,18 @@
       if (TEM_GOOGLE) {
         // Enhanced Conversions: o Google faz o hash do telefone no navegador
         if (dados.telefone_e164) gtag("set", "user_data", { phone_number: dados.telefone_e164 });
+        /* Sem valor monetário de propósito: lead não é venda, e mandar o preço
+           da máquina aqui faria as plataformas reportarem receita fictícia.
+           O valor continua indo para o CRM (webhook) e para o dataLayer, que é
+           de onde a conversão offline vai ler o faturamento real na fase 2. */
         if (vale(CFG.ga4)) gtag("event", "generate_lead", {
-          currency: "BRL", value: dados.valor_modelo || 0, modelo: dados.modelo, segmento: dados.segmento
+          modelo: dados.modelo, segmento: dados.segmento
         });
         if (vale(CFG.convLead)) gtag("event", "conversion", {
-          send_to: CFG.convLead, currency: "BRL", value: dados.valor_modelo || 0
+          send_to: CFG.convLead
         });
       }
-      if (TEM_META) window.fbq("track", "Lead", { currency:"BRL", value: dados.valor_modelo || 0, content_name: dados.modelo });
+      if (TEM_META) window.fbq("track", "Lead", { content_name: dados.modelo });
     }
 
     if (ev === "whatsapp_click") {
