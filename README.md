@@ -78,4 +78,12 @@ Qualquer host estático. Suba `index.html` e a pasta `assets/`.
 
 ## Pendências de conteúdo
 
-Há marcadores amarelos `[CONFIRMAR]` no HTML, propositalmente visíveis, em três pontos ainda sem informação confirmada: **raio coberto pela instalação grátis, prazo e cobertura da garantia, e condições de parcelamento**. Resolver antes de publicar.
+Os três marcadores `[CONFIRMAR]` foram resolvidos com dados do cliente (17/08/2026). O FAQ agora afirma:
+
+- **Instalação inclusa**, com taxa de deslocamento de R$ 39,90 na Grande Vitória (Vitória, Vila Velha, Serra e Cariacica). Fora dessas cidades, o frete é conferido no orçamento.
+- **Garantia de 6 meses** na máquina de gelo, com assistência técnica própria.
+- **Parcelamento no cartão**, com a condição variando por modelo. Sem boleto faturado no momento.
+
+Duas informações seguem sem confirmação e por isso estão escritas de forma genérica, não estimadas: a **cobertura exata da garantia** (peças e mão de obra, atendimento no local ou em bancada) e o **número de parcelas da máquina de gelo**. Sobre um ticket de R$ 9 mil a R$ 35 mil, o parcelamento é argumento de fechamento e vale virar texto afirmativo quando o cliente confirmar.
+
+> Atenção ao editar o herói: o title, a meta description e o selo do topo dizem "frete e instalação grátis". A taxa de R$ 39,90 é explicada só no FAQ, por decisão comercial. Mudar um lado sem o outro deixa a página se contradizendo.
